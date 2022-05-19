@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: "poppins",sans-serif;
+      border-radius: 5px;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+      font-family: "poppins",sans-serif;
+
+
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 15px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 45px;
+      width: 50%;
+      transition: 0.5s;
+      font-family: "poppins",sans-serif;
+
+    }
+
+    button:hover {
+      color: #000;
+      background-color: #FFAC1C;
+      width: 75%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      color: white;
+    }
+    .card img{
+      width: 250px;
+      height: 250px;
+      padding: 10px;
+      border-radius: 20px;
+      }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/14.jpg" %}" alt="John" style="width:100%">
+        <p class="title"  style="color:black;">ADMIN</p>
+        <p><a href="/adminclick"><button>View</button></a></p>
+      </div>
+
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/13.jpg" %}" alt="John" style="width:100%">
+        <p class="title"  style="color:black;">TEACHER</p>
+        <p><a href="/teacherclick"><button>View</button></a></p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/12.png" %}" alt="John" style="width:100%">
+        <p class="title" style="color:black;">STUDENT</p>
+        <p><a href="/studentclick"><button>View</button></a></p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
