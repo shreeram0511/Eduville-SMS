@@ -1,1 +1,1 @@
-# Eduville-SMS it is a school management system with django python webframework
+# Eduville-SMS it is a school management system created with django python webframework by S.Shreeram
